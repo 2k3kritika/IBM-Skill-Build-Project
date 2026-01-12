@@ -82,7 +82,8 @@ Before starting, ensure you have:
 3. Select **URI** tab
 4. Copy the connection string (it looks like):
    ```
-   postgresql://postgres:[YOUR-PASSWORD]@db.xxxxx.supabase.co:5432/postgres
+   postgresql://postgres.DATABASELINK:ENCODED_PASSWORD@aws-1-ap-south-1.pooler.supabase.com:6543/postgres?sslmode=require
+   WORKED PERFECTLY WITH RAILWAY
    ```
 5. Replace `[YOUR-PASSWORD]` with your actual database password
 6. **Save this connection string** - you'll need it for the backend
