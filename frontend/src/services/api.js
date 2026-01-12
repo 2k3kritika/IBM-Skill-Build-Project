@@ -4,10 +4,7 @@
 import axios from 'axios';
 
 // const API_BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:8000/api';
-const API_BASE_URL = process.env.REACT_APP_API_URL || 
-  (process.env.NODE_ENV === 'production' 
-    ? 'https://ibm-skill-build-project-production.up.railway.app'  // Update with your Render URL
-    : 'http://localhost:8000/api');
+const API_BASE_URL = process.env.REACT_APP_API_URL || 'https://ibm-skill-build-project-production.up.railway.app';
 
 const api = axios.create({
   baseURL: API_BASE_URL,
@@ -30,7 +27,7 @@ export const createUser = async (userData) => {
     } else if (error.request) {
       // Request made but no response received
       console.error('No response from server:', error.request);
-      throw new Error('Cannot connect to server. Please make sure the backend is running on http://localhost:8000');
+      throw new Error('Cannot connect to backend server. Check API_BASE_URL and deployment status.');
     } else {
       // Error setting up request
       console.error('Request setup error:', error.message);
