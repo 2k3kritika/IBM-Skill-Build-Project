@@ -35,7 +35,7 @@ def get_connection():
             raise ImportError(
                 "psycopg2 is required for PostgreSQL. Install with: pip install psycopg2-binary"
             )
-        return psycopg2.connect(DATABASE_URL)
+        return psycopg2.connect(DATABASE_URL, sslmode="require")
     else:
         # SQLite connection
         conn = sqlite3.connect(DATABASE_URL.replace("sqlite:///", ""), check_same_thread=False)

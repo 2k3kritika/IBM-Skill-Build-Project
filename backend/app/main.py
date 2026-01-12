@@ -46,7 +46,11 @@ async def startup_event():
     """
     Initialize database on startup.
     """
-    init_db()
+    try:
+        init_db()
+        print("Database initialized successfully")
+    except Exception as e:
+        print("Database initialization skipped or failed:", e)
 
 
 @app.get("/")
