@@ -3,9 +3,13 @@
  */
 import axios from 'axios';
 
+// const API_BASE_URL =
+//   process.env.REACT_APP_API_URL ||
+//   'https://ibm-skill-build-project-production.up.railway.app/api';
+
 const API_BASE_URL =
-  process.env.REACT_APP_API_URL ||
-  'https://ibm-skill-build-project-production.up.railway.app';
+  import.meta.env.VITE_API_URL ||
+  'https://ibm-skill-build-project-production.up.railway.app/api';
 
 const api = axios.create({
   baseURL: API_BASE_URL,
