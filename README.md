@@ -10,12 +10,15 @@ This project aligns with **United Nations Sustainable Development Goal (SDG) 3: 
 
 **This system is NOT a medical diagnostic tool.** It serves as a decision-support and awareness tool only. The system does not perform medical diagnosis and should not replace professional medical or psychological advice.
 
-## To see final site:
+
+## ✅ To see final site:
 - clone the GitHub repo.
 - Go in frontend folder `cd frontend`
 - Run this command `npm start`
 
 site will start working on the browser.
+---
+
 
 ## 🏗️ System Architecture
 
