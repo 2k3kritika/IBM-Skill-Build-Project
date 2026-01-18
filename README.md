@@ -17,7 +17,6 @@ This project aligns with **United Nations Sustainable Development Goal (SDG) 3: 
 - Run this command `npm start`
 
 site will start working on the browser.
----
 
 
 ## 🏗️ System Architecture
