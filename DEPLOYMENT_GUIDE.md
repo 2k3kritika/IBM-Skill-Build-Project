@@ -354,7 +354,7 @@ https://your-project-name.vercel.app
 
 ### Step 2: Verify Environment Variables
 
-**Backend (Render):**
+**Backend (Railway):**
 - ✅ `DATABASE_URL` - Supabase connection string
 - ✅ `GOOGLE_GEMINI_API_KEY` - Gemini API key
 - ✅ `GEMINI_MODEL_NAME` - `gemini-pro`
